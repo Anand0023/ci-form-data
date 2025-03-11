@@ -15,18 +15,15 @@ const employeeSchema = new mongoose.Schema({
         required: true,
         unique: true
     },
-    gender: {
+    option: {
         type: String,
-        required: true,
+        required: false,
     },
-    password: {
+    message: {
         type: String,
-        required: true,
+        required: false,
     },
-    confirmPassword: {
-        type: String,
-        required: true,
-    }
+    
 });
 
 employeeSchema.index({ email: 1 }, { unique: true });

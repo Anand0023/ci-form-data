@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
             emailPattern.test(email) && 
             phonePattern.test(phone) && 
             option !== "" &&
-            message !== "";
+            message !== "";npm 
 
         sendButton.disabled = !isValid;
     }

@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost:27017/ciContactData', {
+mongoose.connect('mongodb+srv://s2-et--25lup:qKFmGFpVObnlJhlp@coderinventa.yh4fg.mongodb.net/coderinventa', {
     // useNewUrlParser: true,
     // useUnifiedTopology: true,
 }).then(() => {

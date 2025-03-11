@@ -4,53 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Registration Form</title>
+    <title>All Details</title>
 </head>
 <body>
-        {{!-- <div class="form-container">
-    <form id="contactForm" class="form" action="/register" method="post">
-        <h2>Contact Us</h2>
-
-        <input type="text" name="name" placeholder="Full Name" required oninput="validateForm()">
-        <input type="email" name="email" placeholder="Email Address" required oninput="validateForm()">
-        <input type="number" name="phone" placeholder="Phone Number" required oninput="validateForm()">
-
-        <textarea name="message" rows="4" placeholder="Your Message" required oninput="validateForm()"></textarea>
-
-        <div class="transparent-border-blue">
-            <button type="submit" id="sendButton">Send Message</button>
-        </div>
-    </form>
-</div> --}}
 
 <div class="form-container">
         <form action="/register" method="post" id="contactForm" class="form">
-            <h2>REGISTRATION PAGE</h2>
-
+            <h2>All Details Page</h2>
             <input type="text" name="fullname" placeholder="Full Name" required>
             <input type="email" name="email" placeholder="Email Address" required>
             <input type="number" name="phone" placeholder="Phone Number" required>
-
-            <div class="gender-selection">
-                <label class="radio-label">
-                    <input type="radio" name="gender" value="male" required>
-                    <span>Male</span>
-                </label>
-                <label class="radio-label">
-                    <input type="radio" name="gender" value="female" required>
-                    <span>Female</span>
-                </label>
-            </div>
-
-            <input type="password" name="password" placeholder="Password" required>
-            <input type="password" name="confirmPassword" placeholder="Confirm Password" required>
-         
+             <select name="option" required>
+                            <option value=""disabled selected>Choose Training Type...</option>
+                            <option>Front-end Web Development</option>
+                            <option>Php Full Stack Development</option>
+                            <option>Mern Stack Development</option>
+                            <option>Android and IOS Development</option>
+                            <option>Digital Marketing</option>                  
+            </select>
+            <textarea name="message" rows="4" placeholder="Message"></textarea>
+          
 
             <div class="transparent-border-blue">
                 <button type="submit" value="register" id="sendButton">Send Message</button>
             </div>
         </form>
-    </div>
+</div>
 <script src="/public/css/index.js"></script>
 </body>
 </html>
